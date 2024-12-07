@@ -17,7 +17,14 @@ declare module '@steamer-academy/react-google-recaptcha' {
     isolated?: boolean;
   }
 
-  export class ReCAPTCHA extends React.Component<ReCAPTCHAProps> {
+  export interface ReCAPTCHAHandle {
+    reset(): void;
+    execute(): Promise<string>;
+    getValue(): string | null;
+    getWidgetId(): number | null;
+  }
+
+  export class ReCAPTCHA extends React.Component<ReCAPTCHAProps> implements ReCAPTCHAHandle {
     reset(): void;
     execute(): Promise<string>;
     getValue(): string | null;
@@ -25,7 +32,7 @@ declare module '@steamer-academy/react-google-recaptcha' {
   }
 
   const ReCAPTCHAWrapper: React.ForwardRefExoticComponent<
-    ReCAPTCHAProps & React.RefAttributes<ReCAPTCHA>
+    ReCAPTCHAProps & React.RefAttributes<ReCAPTCHAHandle>
   >;
   export default ReCAPTCHAWrapper;
 }
