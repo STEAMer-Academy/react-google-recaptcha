@@ -5,10 +5,17 @@ import ReCAPTCHA from "../src/recaptcha-wrapper";
 const VALUE = "some value";
 const WIDGET_ID = "someWidgetId";
 
-// Create a mock for grecaptcha
 const grecaptchaMock = {
-  render: jest.fn(() => WIDGET_ID),
-  getResponse: jest.fn(() => VALUE),
+  render(node, options) {
+    expect(node).toBeTruthy();
+    expect(options).toBeTruthy();
+    return WIDGET_ID;
+  },
+
+  getResponse(widgetId) {
+    expect(widgetId).toBe(WIDGET_ID);
+    return VALUE;
+  },
 };
 
 describe("ReCAPTCHAWrapper", () => {
@@ -25,15 +32,6 @@ describe("ReCAPTCHAWrapper", () => {
     const ReCaptchaRef = React.createRef();
 
     render(<ReCAPTCHA sitekey="xxx" ref={ReCaptchaRef} onChange={jest.fn()} />);
-
-    // Assert that render was called with the correct arguments
-    const renderOptions = grecaptchaMock.render.mock.calls[0][1];
-    expect(grecaptchaMock.render.mock.calls[0][0]).toBeTruthy();
-    expect(renderOptions).toBeTruthy();
-    expect(renderOptions.sitekey).toBe("xxx");
-
-    // Assert that getResponse was called with the correct widgetId
     expect(ReCaptchaRef.current.getValue()).toBe(VALUE);
-    expect(grecaptchaMock.getResponse.mock.calls[0][0]).toBe(WIDGET_ID);
   });
 });

@@ -1,7 +1,7 @@
 import React from "react";
 import { render } from "@testing-library/react";
 
-import ReCAPTCHA from "../src/recaptcha";
+import ReCAPTCHA from "../src/recaptcha"; // eslint-disable-line no-unused-vars
 
 describe("ReCAPTCHA", () => {
   it("Rendered Component should be a div", () => {
@@ -49,7 +49,7 @@ describe("ReCAPTCHA", () => {
       />,
     );
     ReCaptchaRef.current.reset();
-    expect(grecaptchaMock.reset).toHaveBeenCalledWith(WIDGET_ID);
+    expect(grecaptchaMock.reset).toBeCalledWith(WIDGET_ID);
   });
   it("execute, should call grecaptcha.execute with the widget id", () => {
     const WIDGET_ID = "someWidgetId";
@@ -82,7 +82,7 @@ describe("ReCAPTCHA", () => {
     const wrappingRef = React.createRef();
     render(<WrappingComponent ref={wrappingRef} />);
     wrappingRef.current._internalRef.current.execute();
-    expect(grecaptchaMock.execute).toHaveBeenCalledWith(WIDGET_ID);
+    expect(grecaptchaMock.execute).toBeCalledWith(WIDGET_ID);
   });
   it("executeAsync, should call grecaptcha.execute with the widget id", () => {
     const WIDGET_ID = "someWidgetId";
@@ -115,7 +115,7 @@ describe("ReCAPTCHA", () => {
     const wrappingRef = React.createRef();
     render(<WrappingComponent ref={wrappingRef} />);
     wrappingRef.current._internalRef.current.executeAsync();
-    expect(grecaptchaMock.execute).toHaveBeenCalledWith(WIDGET_ID);
+    expect(grecaptchaMock.execute).toBeCalledWith(WIDGET_ID);
   });
   it("executeAsync, should return a promise that resolves with the token", () => {
     const WIDGET_ID = "someWidgetId";
@@ -180,7 +180,7 @@ describe("ReCAPTCHA", () => {
         />,
       );
       ReCaptchaRef.current.handleExpired();
-      expect(onChange).toHaveBeenCalledWith(null);
+      expect(onChange).toBeCalledWith(null);
     });
     it("should call onExpired when response is expired", () => {
       const WIDGET_ID = "someWidgetId";
