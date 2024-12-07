@@ -24,6 +24,8 @@ declare module '@steamer-academy/react-google-recaptcha' {
     getWidgetId(): number | null;
   }
 
-  const ReCAPTCHAWrapper: typeof ReCAPTCHA;
+  const ReCAPTCHAWrapper: React.ForwardRefExoticComponent<
+    ReCAPTCHAProps & React.RefAttributes<ReCAPTCHA>
+  >;
   export default ReCAPTCHAWrapper;
 }
