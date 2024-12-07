@@ -13,14 +13,35 @@ v3.1.0 - Sat 3 Jun 2023 0:30 ET
 - Update dependencies 8 [(#235)](https://github.com/dozoisch/react-google-recaptcha/issues/235)
 - Update dependencies 9 [(#245)](https://github.com/dozoisch/react-google-recaptcha/issues/245)
 
+<<<<<<< HEAD
+||||||| fe96698
+<a name="v3.1.0"></a>
+## v3.1.0 (2024-12-07)
+=======
+<a name="v4.0.0"></a>
+## v4.0.0 (2024-12-07)
+>>>>>>> origin/dev
 
+<<<<<<< HEAD
 v3.0.0-alpha.1 - Mon 23 Nov 2020 22:25 ET
 ---------------------------------------
 - Add isolated prop [(#179)](https://github.com/dozoisch/react-google-recaptcha/issues/179)
 - Update dependencies 1 [(#187)](https://github.com/dozoisch/react-google-recaptcha/issues/187)
 - Update dependencies 2 [(#194)](https://github.com/dozoisch/react-google-recaptcha/issues/194)
 - Remove Timeout Removal [(#196)](https://github.com/dozoisch/react-google-recaptcha/issues/196)
+||||||| fe96698
+### Doc
+=======
+### Fix
+>>>>>>> origin/dev
 
+<<<<<<< HEAD
+||||||| fe96698
+* **readme:** order common props + add asyncScriptOnLoad definition
+=======
+* **deps:** Use npm
+* **package.json:** Use React 19 as Peer Deps
+>>>>>>> origin/dev
 
 
 v2.1.0 - Fri 5 Jun 2020 22:05 PST
