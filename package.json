@@ -1,5 +1,5 @@
 {
-  "name": "react-google-recaptcha",
+  "name": "@steamer-academy/react-google-recaptcha",
   "version": "3.1.0",
   "description": "React Component Wrapper for Google reCAPTCHA 🤖",
   "type": "module",
