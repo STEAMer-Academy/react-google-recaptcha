@@ -29,14 +29,14 @@
     "recaptcha",
     "google-recaptcha"
   ],
-  "author": "Hugo Dozois <hugo@dozoisch.com>",
+  "author": "Muntasir Mahmud <muntasir.joypurhat@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/STEAMer-Academy/react-google-recaptcha/issues"
   },
   "homepage": "https://github.com/STEAMer-Academy/react-google-recaptcha",
   "peerDependencies": {
-    "react": ">=16.4.1"
+    "react": ">=19.0.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.26.4",
