@@ -1,3 +1,19 @@
+[ci.img]: https://github.com/STEAMer-Academy/react-google-recaptcha/actions/workflows/standard-ci.yml/badge.svg?branch=master
+[ci.url]: https://github.com/STEAMer-Academy/react-google-recaptcha/actions/workflows/standard-ci.yml
+[npm.img]: https://badge.fury.io/js/@steamer-academy%2Freact-google-recaptcha.svg?icon=si%3Anpm&icon_color=%23ff0000
+[npm.url]: https://badge.fury.io/js/@steamer-academy%2Freact-google-recaptcha
+[npm.dl.img]: https://img.shields.io/npm/dm/@steamer-academy/react-google-recaptcha.svg
+[npm.dl.url]: https://img.shields.io/npm/dm/@steamer-academy/react-google-recaptcha
+
+[reCAPTCHA]: https://developers.google.com/recaptcha/docs/display
+[signup]: http://www.google.com/recaptcha/admin
+[docs]: https://developers.google.com/recaptcha
+[docs_theme]: https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget
+[js_api]: https://developers.google.com/recaptcha/docs/display#js_api
+[rb]: https://github.com/react-bootstrap/react-bootstrap/
+[reCAPTCHA secure-token]: https://developers.google.com/recaptcha/docs/secure_token
+[reCAPTCHA hl]: https://developers.google.com/recaptcha/docs/language
+
 # react-google-recaptcha
 
 [![Build Status][ci.img]][ci.url] [![npm version][npm.img]][npm.url] [![npm downloads][npm.dl.img]][npm.dl.url]
@@ -209,20 +225,3 @@ If you wish to hide the badge you must add:
 
 to your css.
 
-
-
-[ci.img]: https://github.com/dozoisch/react-google-recaptcha/actions/workflows/standard-ci.yml/badge.svg?branch=master
-[ci.url]: https://github.com/dozoisch/react-google-recaptcha/actions/workflows/standard-ci.yml
-[npm.img]: https://badge.fury.io/js/react-google-recaptcha.svg
-[npm.url]: http://badge.fury.io/js/react-google-recaptcha
-[npm.dl.img]: https://img.shields.io/npm/dm/react-google-recaptcha.svg
-[npm.dl.url]: https://www.npmjs.com/package/react-google-recaptcha
-
-[reCAPTCHA]: https://developers.google.com/recaptcha/docs/display
-[signup]: http://www.google.com/recaptcha/admin
-[docs]: https://developers.google.com/recaptcha
-[docs_theme]: https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget
-[js_api]: https://developers.google.com/recaptcha/docs/display#js_api
-[rb]: https://github.com/react-bootstrap/react-bootstrap/
-[reCAPTCHA secure-token]: https://developers.google.com/recaptcha/docs/secure_token
-[reCAPTCHA hl]: https://developers.google.com/recaptcha/docs/language
