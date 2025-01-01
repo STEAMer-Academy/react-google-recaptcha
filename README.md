@@ -1,10 +1,6 @@
 [reCAPTCHA]: https://developers.google.com/recaptcha/docs/display
 [signup]: http://www.google.com/recaptcha/admin
-[docs]: https://developers.google.com/recaptcha
 [docs_theme]: https://developers.google.com/recaptcha/docs/faq#can-i-customize-the-recaptcha-widget
-[js_api]: https://developers.google.com/recaptcha/docs/display#js_api
-[rb]: https://github.com/react-bootstrap/react-bootstrap/
-[reCAPTCHA secure-token]: https://developers.google.com/recaptcha/docs/secure_token
 [reCAPTCHA hl]: https://developers.google.com/recaptcha/docs/language
 
 <h3 align="center"><img src="https://readme-typing-svg.demolab.com/?lines=React+Google+Recaptcha+🤖;&font=Poppins"></h3>
@@ -26,7 +22,7 @@ React component for [Google reCAPTCHA v2][reCAPTCHA].
 ## 🚀 Installation
 
 ```bash
-npm install --save react-google-recaptcha
+npm install --save @steamer-academy/react-google-recaptcha
 ```
 
 ## 📖 Usage
